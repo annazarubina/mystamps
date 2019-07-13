@@ -54,7 +54,7 @@ after_success:
     fi
   - if [ "$SPRING_PROFILES_ACTIVE" = 'travis' ]; then
       ./src/main/scripts/ci/publish-code-coverage.sh;
-      sleep 5;
+      sleep 6;
     fi
 
 deploy:
